@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import ru.ya.d.chmmle.yana.R
 import ru.ya.d.chmmle.yana.data.Note
 import ru.ya.d.chmmle.yana.data.contentShort
+import ru.ya.d.chmmle.yana.data.titleShort
 
 
 class NotesAdapter(private val onClick: (Note) -> Unit) :
@@ -30,7 +31,7 @@ class NotesAdapter(private val onClick: (Note) -> Unit) :
 
         fun bind(note: Note) {
             currentNote = note
-            titleTextView.text = note.title
+            titleTextView.text = note.titleShort()
             contentTextView.text = note.contentShort()
         }
     }
