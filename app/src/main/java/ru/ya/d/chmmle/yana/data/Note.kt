@@ -26,6 +26,14 @@ data class Note(
     val timesOpened: Long
 )
 
+fun Note.titleShort(): String {
+    return if (title.length <= 20) {
+        title
+    } else {
+        title.take(20) + "..."
+    }
+}
+
 fun Note.contentShort(): String {
     return if (content.length < 200) {
         content
