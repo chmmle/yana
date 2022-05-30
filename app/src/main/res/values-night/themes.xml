@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="Theme.Yana" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/red_ultra_pale</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

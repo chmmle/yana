@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">yana</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">Title</string>
+    <string name="content">Content</string>
+    <string name="blank_string">" "</string>
+    <string name="about">About</string>
+    <string name="no_notes">No notes here yet</string>
+    <string name="menu_delete">menu_delete</string>
+</resources>
