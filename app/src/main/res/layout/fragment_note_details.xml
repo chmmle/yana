@@ -24,6 +24,7 @@
             android:background="@android:color/transparent"
             android:hint="@string/title"
             android:importantForAutofill="no"
+            android:inputType="text"
             android:padding="16dp"
             android:text="@={noteDetailsViewModel.noteTitle}"
             android:textSize="24sp"
