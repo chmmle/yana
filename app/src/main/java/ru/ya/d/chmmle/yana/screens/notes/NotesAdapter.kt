@@ -31,7 +31,7 @@ class NotesAdapter(private val onClick: (Note) -> Unit) :
 
         fun bind(note: Note) {
             currentNote = note
-            titleTextView.text = note.titleShort()
+            titleTextView.text = note.title
             contentTextView.text = note.contentShort()
         }
     }
