@@ -72,12 +72,16 @@ class NoteDetailsFragment : Fragment() {
         viewModel.saveNote()
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
+    override fun onStop() {
+        super.onStop()
         if (!isDeleting) {
             saveNote()
             isDeleting = false
         }
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
         _binding = null
     }
 }
