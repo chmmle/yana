@@ -75,7 +75,14 @@ class NoteDetailsViewModel @Inject constructor(private val notesRepository: INot
             if (!isNewNote) {
                 note = note.copy(id = noteId!!.toInt())
             }
-            notesRepository.insertNote(note)
+            // Needed to prevent duplicating notes
+            // when navigating away form the app and returning back,
+            // while creating a new note.
+            // Not ideal, but a larger refactor needed, probably
+            // todo: refactor
+            val createdNoteId = notesRepository.insertNote(note)
+            noteId = createdNoteId.toString()
+            isNewNote = false
         }
     }
 
