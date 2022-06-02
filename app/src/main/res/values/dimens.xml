@@ -4,4 +4,6 @@
     <dimen name="normal_text_size">18sp</dimen>
     <dimen name="note_card_text_content">16sp</dimen>
     <dimen name="note_card_text_title">20sp</dimen>
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
 </resources>
