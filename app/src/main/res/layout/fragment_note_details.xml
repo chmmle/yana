@@ -25,9 +25,9 @@
             android:hint="@string/title"
             android:importantForAutofill="no"
             android:inputType="text"
-            android:padding="16dp"
+            android:padding="@dimen/details_title_padding"
             android:text="@={noteDetailsViewModel.noteTitle}"
-            android:textSize="24sp"
+            android:textSize="@dimen/details_title_text_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -53,9 +53,9 @@
             android:gravity="start|top"
             android:hint="@string/content"
             android:inputType="textMultiLine"
-            android:paddingStart="16dp"
-            android:paddingTop="16dp"
-            android:paddingEnd="16dp"
+            android:paddingStart="@dimen/details_full_content_padding"
+            android:paddingTop="@dimen/details_full_content_padding"
+            android:paddingEnd="@dimen/details_full_content_padding"
             android:text="@={noteDetailsViewModel.noteContent}" />
     </LinearLayout>
 </layout>
