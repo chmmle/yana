@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="@string/no_notes"
-                    android:textSize="24sp" />
+                    android:textSize="@dimen/header_text_size" />
 
             </LinearLayout>
         </RelativeLayout>
